@@ -20,7 +20,7 @@ def add_todo():
 	itda = 'Item: ' + item  + '; Due: ' + date + '\n'
 	items.append(itda)
 	# this would return a new page with the listings:	", ".join(items)
-	return redirect("http://localhost:5000/", code=302)
+	return redirect("/", code=302) #either "http://localhost:5000" or "/" works fine
 
 #for json get files
 @app.route('/get_todos')
